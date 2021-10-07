@@ -33,6 +33,16 @@ npm install
 
 - The body should be stringified. Else an error will be thrown.
 
+- Missing execution permission for Lambda function results in below error. Refer Cloudwatch logs for more details.
+
+  ```
+  502 Bad Gateway
+
+  {
+      "message": "Internal server error"
+  }
+  ```
+
 ## DynamoDB
 
 - Table, Items, attributes
